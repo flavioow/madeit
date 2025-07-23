@@ -1,0 +1,32 @@
+{
+    "name": "madeit",
+    "version": "1.0.0",
+    "description": "Easily store and reuse your projects.",
+    "main": "index.js",
+    "scripts": {
+        "lint": "npx @biomejs/biome check --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/flavioow/madeit.git"
+    },
+    "keywords": [],
+    "author": "Flávio Henrique",
+    "license": "MIT",
+    "type": "commonjs",
+    "bin": {
+        "mdit": "./bin/mdit.js"
+    },
+    "bugs": {
+        "url": "https://github.com/flavioow/madeit/issues"
+    },
+    "homepage": "https://github.com/flavioow/madeit#readme",
+    "dependencies": {
+        "fs-extra": "^11.3.0",
+        "prompts": "^2.4.2"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.1.2",
+        "tsx": "^4.20.3"
+    }
+}
