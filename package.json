@@ -2,7 +2,7 @@
     "name": "madeit",
     "version": "1.0.0",
     "description": "Easily store and reuse your projects.",
-    "main": "index.js",
+    "main": "./bin/mdit.js",
     "scripts": {
         "lint": "npx @biomejs/biome check --write"
     },
@@ -13,7 +13,7 @@
     "keywords": [],
     "author": "Flávio Henrique",
     "license": "MIT",
-    "type": "commonjs",
+    "type": "module",
     "bin": {
         "mdit": "./bin/mdit.js"
     },
