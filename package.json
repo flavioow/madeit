@@ -2,21 +2,36 @@
     "name": "madeit",
     "version": "1.0.0",
     "description": "Easily store and reuse your projects.",
-    "main": "./bin/mdit.js",
+    "main": "./dist/main.js",
     "scripts": {
+        "build": "tsc",
+        "dev": "tsx src/main.ts",
         "lint": "npx @biomejs/biome check --write"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/flavioow/madeit.git"
     },
-    "keywords": [],
+    "keywords": [
+        "cli",
+        "productivity",
+        "template",
+        "boilerplate",
+        "automation",
+        "reuse"
+    ],
     "author": "Flávio Henrique",
     "license": "MIT",
     "type": "module",
     "bin": {
         "mdit": "./bin/mdit.js"
     },
+    "files": [
+        "dist/**/*",
+        "bin/mdit.js",
+        "README.md",
+        "LICENSE"
+    ],
     "bugs": {
         "url": "https://github.com/flavioow/madeit/issues"
     },
@@ -27,6 +42,10 @@
     },
     "devDependencies": {
         "@biomejs/biome": "2.1.2",
-        "tsx": "^4.20.3"
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^22.16.5",
+        "@types/prompts": "^2.4.9",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3"
     }
 }
